@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 class SwapiList extends Component {
   renderSwapi(swapiData) {
     return (
       <tr>
-        <td>{swapiData.swapi.results.name}</td>
+        <td>{swapiData.swapi.name}</td>
       </tr>
     );
   }
@@ -25,12 +25,12 @@ class SwapiList extends Component {
           {this.props.swapi.map(this.renderSwapi)}
         </tbody>
       </table>
-    );
+    )
   }
 }
 
-function mapStateToProps({ swapi }){
-  return( { swapi });
+function mapStateToProps({ swapi }) {
+  return { swapi };
 }
 
 export default connect(mapStateToProps)(SwapiList);
