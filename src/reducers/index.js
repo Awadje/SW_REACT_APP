@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import SwapiReducer from './reducer_swapi';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  swapi: SwapiReducer
 });
 
 export default rootReducer;
