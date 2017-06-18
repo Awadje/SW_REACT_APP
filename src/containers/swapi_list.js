@@ -5,7 +5,7 @@ class SwapiList extends Component {
   renderSwapi(swapiData) {
     return (
       <tr>
-        <td>{swapiData.swapi.results}</td>
+        <td>{swapiData.swapi.results.name}</td>
       </tr>
     );
   }
@@ -22,7 +22,7 @@ class SwapiList extends Component {
           </tr>
         </thead>
         <tbody>
-          {this.props.swapi.results.map(this.renderSwapi)}
+          {this.props.swapi.map(this.renderSwapi)}
         </tbody>
       </table>
     );
