@@ -8,6 +8,7 @@ export function fetchSwapi(name) {
   const url = `${ROOT_URL}?search=${name}`;
   const request = axios.get(url);
 
+  console.log('Request:', request);
 
   return {
     type: FETCH_SWAPI,
