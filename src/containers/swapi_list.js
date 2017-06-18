@@ -4,8 +4,9 @@ import { connect } from 'react-redux';
 class SwapiList extends Component {
   renderSwapi(swapiData) {
     return (
+
       <tr>
-        <td>{swapiData.swapi.name}</td>
+        <td>{swapiData.name}</td>
       </tr>
     );
   }
@@ -23,14 +24,17 @@ class SwapiList extends Component {
         </thead>
         <tbody>
           {this.props.swapi.map(this.renderSwapi)}
+
         </tbody>
       </table>
+
     )
   }
 }
 
 function mapStateToProps({ swapi }) {
   return { swapi };
+
 }
 
 export default connect(mapStateToProps)(SwapiList);
