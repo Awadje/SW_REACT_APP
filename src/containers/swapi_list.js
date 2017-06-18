@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+var request = require('superagent');
+import ReactGiphy from  'react-giphy';
+
 
 class SwapiList extends Component {
   renderSwapi(swapiData) {
-    return (
+    const name = swapiData.name;
+    const birth_year = swapiData.birth_year;
+    const height = swapiData.height;
+    const mass = swapiData.mass;
 
-      <tr>
-        <td>{swapiData.name}</td>
+    return (
+      <tr key={name}>
+        <td> {name} </td>
+        <td> <ReactGiphy tag={name} /> </td>
+        <td> {birth_year} </td>
+        <td> {height}(cm) </td>
+        <td> {mass}(kg) </td>
       </tr>
     );
   }
@@ -17,6 +28,7 @@ class SwapiList extends Component {
         <thead>
           <tr>
             <th>Name</th>
+            <th>Picture</th>
             <th>Birth Year</th>
             <th>Height</th>
             <th>Mass</th>
