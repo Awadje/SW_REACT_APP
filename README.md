@@ -8,7 +8,8 @@ To do:
 
 ```
 > Style results using Material-UI Cards
-> Add search categories 
+> Add search categories
+> Write additional tests
 ```
 
 ### Screenshot
