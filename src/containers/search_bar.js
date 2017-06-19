@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect} from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchSwapi } from '../actions/index';
+import TextField from 'material-ui/TextField';
+import RaisedButton from 'material-ui/RaisedButton';
 
 
 class SearchBar extends Component {
@@ -28,13 +30,13 @@ class SearchBar extends Component {
   render() {
     return (
       <form onSubmit={this.onFormSubmit} className="input-group">
-        <input
-          placeholder="Type in character name"
-          className="form-control"
+        <TextField
+          hintText="Type in character name"
+          style={true}
           value={this.state.term}
           onChange={this.onInputChange} />
         <span className="input-group-btn">
-          <button type="submit" className="btn btn-secondary">Submit</button>
+           <RaisedButton label="Submit" primary={true} type="submit"></RaisedButton>
         </span>
       </form>
     );

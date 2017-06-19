@@ -7,6 +7,10 @@ td, th {
   margin: 20px 0px;
 }
 
+input-group {
+  border: 0px;
+}
+
 svg {
   height: 150px;
 }
