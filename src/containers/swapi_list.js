@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 var request = require('superagent');
 import ReactGiphy from  'react-giphy';
-import {Card, CardActions, CardHeader, CardMedia, CardTitle, CardText} from 'material-ui/Card';
 
 
 class SwapiList extends Component {
@@ -14,11 +13,13 @@ class SwapiList extends Component {
 
     return (
       <tr key={name}>
-        <td> {name} </td>
-        <td> <ReactGiphy tag={name} /> </td>
-        <td> {birth_year} </td>
-        <td> {height}(cm) </td>
-        <td> {mass}(kg) </td>
+        <td>
+        <ReactGiphy tag={name} /> <br />
+        <b>Name:</b> {name} <br />
+        <b>Birth Year:</b> {birth_year} <br />
+        <b>Height:</b> {height}(cm) <br />
+        <b>Mass:</b> {mass}(kg)
+        </td>
       </tr>
     );
   }
@@ -28,16 +29,11 @@ class SwapiList extends Component {
       <table className="table table-hover">
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Picture</th>
-            <th>Birth Year</th>
-            <th>Height</th>
-            <th>Mass</th>
+            <th>Results</th>
           </tr>
         </thead>
         <tbody>
           {this.props.swapi.map(this.renderSwapi)}
-
         </tbody>
       </table>
 
