@@ -5,5 +5,5 @@ export default function(state = [], action) {
     case FETCH_SWAPI:
       return [ action.payload.data.results[0], ...state ];
   }
-    return state;
+  return state;
 }
