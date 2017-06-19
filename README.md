@@ -1,5 +1,16 @@
 # Star Wars React App
 
+### General Information
+
+An app where you can lookup your favorite characters. It's a React-Redux app connected to SWAPI the Star Wars API. Material UI is used for styling and Giphy is used to find matching images for your search.
+
+To do:
+
+```
+> Style results using Material-UI Cards
+> Add search categories 
+```
+
 ### Screenshot
 
 ![Screenshot:](https://res.cloudinary.com/dnbyfobad/image/upload/v1497872943/Screen_Shot_2017-06-19_at_13.47.48_uslqha.png)
