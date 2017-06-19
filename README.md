@@ -1,5 +1,10 @@
 # Star Wars React App
 
+### Screenshot
+
+![Screenshot:](https://res.cloudinary.com/dnbyfobad/image/upload/v1497872943/Screen_Shot_2017-06-19_at_13.47.48_uslqha.png)
+
+
 ### Getting Started
 
 There are two methods for getting started with this repo.
@@ -21,7 +26,3 @@ Click [here](https://github.com/Awadje/SW_REACT_APP/archive/master.zip) then dow
 > npm install
 > npm start
 ```
-
-### Screenshot
-
-![Screenshot:](https://res.cloudinary.com/dnbyfobad/image/upload/v1497872943/Screen_Shot_2017-06-19_at_13.47.48_uslqha.png)
