@@ -14,11 +14,11 @@ class SwapiList extends Component {
     return (
       <tr key={name}>
         <td>
-        <ReactGiphy tag={name} /> <br />
-        <b>Name:</b> {name} <br />
-        <b>Birth Year:</b> {birth_year} <br />
-        <b>Height:</b> {height}(cm) <br />
-        <b>Mass:</b> {mass}(kg)
+          <ReactGiphy tag={name} /> <br />
+          <b>Name:</b> {name} <br />
+          <b>Birth Year:</b> {birth_year} <br />
+          <b>Height:</b> {height}(cm) <br />
+          <b>Mass:</b> {mass}(kg)
         </td>
       </tr>
     );
