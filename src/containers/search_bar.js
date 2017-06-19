@@ -32,7 +32,6 @@ class SearchBar extends Component {
       <form onSubmit={this.onFormSubmit} className="input-group">
         <TextField
           hintText="Type in character name"
-          style={true}
           value={this.state.term}
           onChange={this.onInputChange} />
         <span className="input-group-btn">

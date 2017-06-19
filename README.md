@@ -26,3 +26,11 @@ Click [here](https://github.com/Awadje/SW_REACT_APP/archive/master.zip) then dow
 > npm install
 > npm start
 ```
+
+#### Tests
+Run tests as shown below:
+
+```
+> npm start
+> npm test
+```
