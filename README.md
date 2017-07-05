@@ -2,7 +2,7 @@
 
 ### General Information
 
-An app where you can lookup your favorite characters. It's a React-Redux app connected to SWAPI the Star Wars API. Material UI is used for styling and Giphy is used to find matching images for your search.
+An app where you can lookup your favourite characters. It's a React-Redux app connected to SWAPI the Star Wars API. Material UI is used for styling and Giphy is used to find matching images for your search.
 
 To do:
 
